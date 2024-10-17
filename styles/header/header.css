@@ -1,0 +1,132 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px 15px 10px;
+}
+
+.header__logo {
+  width: 100%;
+  max-width: 113.21px;
+  height: 35.06px;
+}
+
+.header__button-menu {
+  background-image: url(../../images/menu.svg);
+  background-color: inherit;
+  width: 41px;
+  height: 20px;
+}
+
+.header__button-call {
+  background-image: url(../../images/call-button.svg);
+  background-repeat: no-repeat;
+  background-size: 50% 50%;
+  background-position: center;
+  border-radius: 5px;
+  background-color: rgb(107, 90, 249);
+  width: 52px;
+  height: 32.5px;
+}
+
+.header__contact-numbers {
+  display: none;
+ }
+
+.header__messenger-icons {
+  display: flex;
+  gap: 14px;
+  padding-top: 11px;
+}
+
+.header__contacts {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.header__number {
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 16px;
+  letter-spacing: 0;
+  text-align: end;
+}
+
+.header__working-hours {
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0;
+}
+
+.header__messenger-icon {
+  width: 18px;
+height: 18px;
+}
+
+.header__button-request-call {
+  border-radius: 5px;
+  background: rgb(107, 90, 249);
+  width: 177px;
+  height: 60px;
+  color: rgb(255, 255, 255);
+  font-size: 12px;
+  font-weight: 800;
+  line-height: 15px;
+  letter-spacing: 0;
+}
+
+.main-menu__list {
+  display: none;
+font-size: 14px;
+font-weight: 700;
+line-height: 17px;
+letter-spacing: 0%;
+}
+
+@media (min-width: 768px) {
+  .header__logo {
+    max-width: 177.61px;
+    height: 55px;
+  }
+
+  .header__button-call {
+    width: 62px;
+    height: 38.75px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .header {
+    padding: 32px 0 23px 0;
+  }
+  .main-menu__list {
+    display: flex;
+    gap: 27px;
+  }
+
+  .header__button-call {
+    display: none;
+  }
+
+  .header__button-menu {
+    display: none;
+  }
+
+  .header__contact-numbers {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  .header__button-request-call {
+    display: block;
+  }
+
+  .header__logo {
+    max-width: 182px;
+    height: 55px;
+    order: -1;
+  }
+}
